@@ -1,0 +1,22 @@
+{
+  "name": "todo-list",
+  "version": "1.0.0",
+  "description": "ToDo-List",
+  "main": "script.js",
+  "scripts": {
+    "sass": "node-sass -w scss/main.scss -o css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GeekGully/Todo-List.git"
+  },
+  "author": "Swastik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GeekGully/Todo-List/issues"
+  },
+  "homepage": "https://github.com/GeekGully/Todo-List#readme",
+  "devDependencies": {
+    "node-sass": "^4.13.0"
+  }
+}
