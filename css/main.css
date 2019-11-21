@@ -1,5 +1,22 @@
+:root {
+  --clr--primary: rgb(67, 141, 187);
+  --clr-light: #f4f4f4; }
+
 body {
-  background-color: #d3d3d3; }
+  margin: 0;
+  font-family: sans-serif;
+  background-color: var(--clr--primary);
+  color: var(--clr-light); }
 
 h1 {
   text-align: center; }
+
+.task_list {
+  display: grid;
+  grid-template-columns: 2fr;
+  text-align: center; }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px; }
