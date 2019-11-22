@@ -5,25 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Belleza&display=swap" rel="stylesheet"> 
+    <script defer src="script.js"></script>
     <title>ToDo-List</title>
   </head>
   <body>
-    <div class="tasks">
-      <h1>ToDo-List</h1>
-      <div class="task_list">
-        <h2 class="title">Add a new task</h2>
-        <form id="addForm" action="">
+    <!--First row in the grid-->
+   <h1 class="title">My Todo List</h1>
+   <!--second row in the grid-->
+   <div class="task-list">
+      <h2>Tasks to do</h2>
+        
+      <ul class="u-list">
+        <li>shopping</li>
+        <li>school</li>
+      </ul>
+   </div>
+ <!--third row in the grid-->
+  <footer class="input">
+        <form id="addForm" action="#">
           <input
             type="text"
             class="new_task"
             placeholder="Enter a new task"
             aria-label="Enter a new task"
           />
-          <button class="btn_task" aria-label="create a new task">+</button>
+          <button class="btn_task" aria-label="Enter a new task">+</button>
         </form>
-      </div>
-    </div>
-
-    <script src="script.js"></script>
+  </footer>
   </body>
 </html>
