@@ -1,15 +1,12 @@
 :root {
   --clr--primary: rgb(67, 141, 187);
-  --clr-light: #f4f4f4; }
+  --clr-light: #f5f3f3; }
 
 body {
   margin: 0;
   font-family: sans-serif;
   background-color: var(--clr--primary);
   color: var(--clr-light); }
-
-h1 {
-  text-align: center; }
 
 .task_list {
   display: grid;
@@ -20,3 +17,30 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 10px; }
+
+input {
+  width: 100%; }
+  input input::placeholder {
+    padding-right: 22px;
+    color: #a8acae;
+    text-align: center; }
+
+.new_task {
+  font-size: 18px;
+  color: #4d5050;
+  background-color: #f7f7f7;
+  width: auto;
+  padding: 10px 15px 10px 15px;
+  box-sizing: border-box;
+  border: 3px solid rgba(0, 0, 0, 0);
+  text-align: justify; }
+
+.btn_task {
+  box-sizing: border-box;
+  background-color: #ffb444;
+  border: 1px solid #ffb444;
+  padding: 0px 10px 10px 10px; }
+  .btn_task span {
+    font-size: 31px;
+    width: 100px;
+    height: 100px; }

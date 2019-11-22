@@ -9,17 +9,20 @@
   </head>
   <body>
     <div class="tasks">
-      <h1>ToDo-List</h1>
       <div class="task_list">
-        <h2 class="title">Add a new task</h2>
+        <h1 class="title">ToDo-List</h1>
         <form id="addForm" action="">
           <input
             type="text"
             class="new_task"
+            autofocus
             placeholder="Enter a new task"
             aria-label="Enter a new task"
+            size="22px"
           />
-          <button class="btn_task" aria-label="create a new task">+</button>
+          <button class="btn_task" aria-label="create a new task">
+            <span>+</span>
+          </button>
         </form>
       </div>
     </div>
