@@ -10,21 +10,25 @@
   <body>
     <div class="tasks">
       <div class="task_list">
-        <h1 class="title">ToDo-List</h1>
+        <h1 class="title" style="padding-bottom:0px;">ToDo-List</h1>
         <form id="addForm" action="">
           <input
             type="text"
-            class="new_task"
+            id="new_task"
             autofocus
             placeholder="Enter a new task"
             aria-label="Enter a new task"
             size="22px"
           />
-          <button class="btn_task" aria-label="create a new task">
+          <button type="submit" class="btn_task" aria-label="create a new task">
             <span>+</span>
           </button>
+          <ul id="items">
+            <li class="task-item">Go to gym</li>
+          </ul>
         </form>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
