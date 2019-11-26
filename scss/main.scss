@@ -1,5 +1,5 @@
 :root {
-  --clr--primary: rgba(107, 152, 181, 0.918);
+  --clr--primary: rgba(3, 23, 37, 0.918);
   --clr-light: #f5f3f3;
 }
 
@@ -8,7 +8,7 @@ body {
   font-family: sans-serif;
   background-color: var(--clr--primary);
   color: var(--clr-light);
-  padding-top: 100px;
+  padding-top: 150px;
 }
 
 div {
@@ -18,12 +18,16 @@ div {
   background: rgb(120, 127, 128);
   width: 400px;
   margin: auto;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 
 .title {
   color: rgb(197, 209, 211);
-  padding-top: 20px;
+  padding-top: 0px;
+}
+
+#addForm {
+  padding-bottom: 10px;
 }
 
 .task_list {
@@ -34,9 +38,21 @@ div {
 }
 
 ul {
+  display: grid;
+  grid-auto-rows: 40px;
+  background-color: lavender;
+  color: rgb(70, 89, 124);
   list-style-type: none;
-  margin: 0;
-  padding: 10px;
+  margin: auto;
+  padding: 0px 0px 0px 0px;
+  letter-spacing: 2px;
+  width: 287px;
+
+  li .task-item {
+    margin: 0;
+    width: 287px;
+    background-color: lavender;
+  }
 }
 
 input {
@@ -48,12 +64,12 @@ input {
   }
 }
 
-.new_task {
+#new_task {
   font-size: 18px;
   color: rgb(77, 80, 80);
   background-color: #f7f7f7;
   width: auto;
-  padding: 10px 15px 10px 15px;
+  padding: 10px 15px 10px 14px;
   box-sizing: border-box;
   border: 3px solid rgba(0, 0, 0, 0);
   text-align: justify;
