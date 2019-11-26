@@ -1,17 +1,32 @@
 :root {
-  --clr--primary: rgb(67, 141, 187);
+  --clr--primary: rgba(107, 152, 181, 0.918);
   --clr-light: #f5f3f3; }
 
 body {
   margin: 0;
   font-family: sans-serif;
   background-color: var(--clr--primary);
-  color: var(--clr-light); }
+  color: var(--clr-light);
+  padding-top: 100px; }
+
+div {
+  display: grid;
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 1em;
+  background: #787f80;
+  width: 400px;
+  margin: auto;
+  padding-bottom: 10px; }
+
+.title {
+  color: #c5d1d3;
+  padding-top: 20px; }
 
 .task_list {
   display: grid;
   grid-template-columns: 2fr;
-  text-align: center; }
+  text-align: center;
+  padding-top: 20px; }
 
 ul {
   list-style-type: none;
@@ -39,8 +54,12 @@ input {
   box-sizing: border-box;
   background-color: #ffb444;
   border: 1px solid #ffb444;
-  padding: 0px 10px 10px 10px; }
+  padding: 0px 10px 9px 10px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden; }
   .btn_task span {
     font-size: 31px;
     width: 100px;
-    height: 100px; }
+    height: 100px;
+    color: #fff; }
