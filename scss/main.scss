@@ -19,39 +19,42 @@ div {
   width: 400px;
   margin: auto;
   padding-bottom: 20px;
-}
 
-.title {
-  color: rgb(197, 209, 211);
-  padding-top: 0px;
-}
+  .title {
+    color: rgb(197, 209, 211);
+    padding-top: 0px;
+  }
 
-#addForm {
-  padding-bottom: 10px;
-}
+  #addForm {
+    padding-bottom: 10px;
+  }
 
-.task_list {
-  display: grid;
-  grid-template-columns: 2fr;
-  text-align: center;
-  padding-top: 20px;
-}
+  .task_list {
+    display: grid;
+    grid-template-columns: 2fr;
+    text-align: center;
+    padding-top: 20px;
+  }
 
-ul {
-  display: grid;
-  grid-auto-rows: 40px;
-  background-color: lavender;
-  color: rgb(70, 89, 124);
-  list-style-type: none;
-  margin: auto;
-  padding: 0px 0px 0px 0px;
-  letter-spacing: 2px;
-  width: 287px;
-
-  li .task-item {
-    margin: 0;
-    width: 287px;
+  ul {
+    display: grid;
+    grid-auto-rows: 40px;
     background-color: lavender;
+    color: rgb(70, 89, 124);
+    list-style-type: none;
+    margin: auto;
+    padding: 0px 0px 0px 0px;
+    letter-spacing: 2px;
+    width: 287px;
+    text-align: center;
+
+    li .task-item {
+      display: grid;
+      grid-auto-rows: 40px;
+      margin: auto;
+      width: 287px;
+      background-color: lavender;
+    }
   }
 }
 
@@ -90,4 +93,8 @@ input {
     height: 100px;
     color: #fff;
   }
+}
+
+.btn-danger {
+  float: right;
 }
