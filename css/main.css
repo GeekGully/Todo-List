@@ -17,34 +17,33 @@ div {
   width: 400px;
   margin: auto;
   padding-bottom: 20px; }
-
-.title {
-  color: #c5d1d3;
-  padding-top: 0px; }
-
-#addForm {
-  padding-bottom: 10px; }
-
-.task_list {
-  display: grid;
-  grid-template-columns: 2fr;
-  text-align: center;
-  padding-top: 20px; }
-
-ul {
-  display: grid;
-  grid-auto-rows: 40px;
-  background-color: lavender;
-  color: #46597c;
-  list-style-type: none;
-  margin: auto;
-  padding: 0px 0px 0px 0px;
-  letter-spacing: 2px;
-  width: 287px; }
-  ul li .task-item {
-    margin: 0;
+  div .title {
+    color: #c5d1d3;
+    padding-top: 0px; }
+  div #addForm {
+    padding-bottom: 10px; }
+  div .task_list {
+    display: grid;
+    grid-template-columns: 2fr;
+    text-align: center;
+    padding-top: 20px; }
+  div ul {
+    display: grid;
+    grid-auto-rows: 40px;
+    background-color: lavender;
+    color: #46597c;
+    list-style-type: none;
+    margin: auto;
+    padding: 0px 0px 0px 0px;
+    letter-spacing: 2px;
     width: 287px;
-    background-color: lavender; }
+    text-align: center; }
+    div ul li .task-item {
+      display: grid;
+      grid-auto-rows: 40px;
+      margin: auto;
+      width: 287px;
+      background-color: lavender; }
 
 input {
   width: 100%; }
@@ -76,3 +75,6 @@ input {
     width: 100px;
     height: 100px;
     color: #fff; }
+
+.btn-danger {
+  float: right; }
