@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <title>ToDo-List</title>
   </head>
   <body>
@@ -12,7 +16,7 @@
       <div class="task_list">
         <h1 class="title" style="padding-bottom:0px;">ToDo-List</h1>
 
-        <form id="addForm" action="">
+        <form id="addForm" action="" name="form">
           <input
             type="text"
             id="new_task"
@@ -20,13 +24,21 @@
             placeholder="Enter a new task"
             aria-label="Enter a new task"
             size="22px"
+            required
+            pattern="\S+.*"
           />
           <button type="submit" class="btn_task" aria-label="create a new task">
             <span>+</span>
           </button>
           <ul id="items">
             <li class="task-item">
-              Go to gym<button class="btn-danger">X</button>
+              Go to gym
+              <span>
+                <i class="material-icons">
+                  keyboard_arrow_down
+                </i>
+              </span>
+              <button class="btn-danger">X</button>
             </li>
           </ul>
         </form>
