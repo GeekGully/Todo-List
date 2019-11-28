@@ -1,7 +1,8 @@
 var form = document.getElementById("addForm");
 var taskList = document.getElementById("items");
-//Form add event
+var input = document.getElementById("new_task");
 
+//Form add event
 form.addEventListener("submit", addTask);
 
 // Delete event
@@ -36,6 +37,18 @@ function addTask(e) {
   // Append button to li
   li.appendChild(deleteBtn);
 
+  // Create a arrow down Element
+
+  var arrowDown = document.createElement("span");
+
+  // Add class to arrow down
+
+  arrowDown.className = "material-icons";
+
+  // Append to li elements
+
+  li.appendChild(arrowDown);
+
   // Add li to ul
   taskList.appendChild(li);
 }
@@ -44,5 +57,10 @@ function removeItem(e) {
   if (e.target.classList.contains("btn-danger")) {
     var li = e.target.parentElement;
     taskList.removeChild(li);
+    // li.style.opacity = "0";
+    // setTimeout(function() {
+    //   // fade out function for delete button
+    //   taskList.removeChild(li);
+    // }, 1000);
   }
 }
