@@ -55,11 +55,21 @@ div {
       width: 287px;
       background-color: lavender;
     }
+
+    li:nth-child(2n) {
+      background: #f7f7f7;
+    }
+
+    span {
+      width: 24px;
+      height: 18px;
+    }
   }
 }
 
 input {
   width: 100%;
+
   input::placeholder {
     padding-right: 22px;
     color: rgb(168, 172, 174);
@@ -97,4 +107,20 @@ input {
 
 .btn-danger {
   float: right;
+  background-color: rgb(255, 16, 16);
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  // margin-left: 10px;
+  // text-align: center;
+  // width: 0;
+  // display: inline-block;
+  // transition: 0.2s linear;
+  // opacity: 0;
+
+  // .btn-danger:hover {
+  //   opacity: 1;
+  // }
 }
