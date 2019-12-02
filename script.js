@@ -66,7 +66,7 @@ function removeItem(e) {
 }
 
 window.onload = function() {
-  var downArrow = document.querySelectorAll(".down");
+  var downArrow = document.querySelectorAll(".down");  // As stated in the issue
 
   for (var i = 0; i < downArrow.length; i++) {
     downArrow[i].addEventListener("click", function() {
