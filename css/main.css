@@ -1,61 +1,116 @@
-:root {
-  --clr--primary: rgb(67, 141, 187);
-  --clr-dark: black; }
-
 body {
-  margin: 0;
-  font-family: "Belleza", sans-serif;
-  background: rgba(131, 204, 161, 0.918);
-  font-weight: 300;
-  color: var(--clr-light); }
+  background: #edf0f1;
+  padding: 80px 0 0 0; }
 
-h1 {
-  font-size: 3rem;
-  font-weight: 900;
-  letter-spacing: 2px;
-  text-align: center;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin: 0; }
+.noFill {
+  fill: none; }
 
-h3 {
-  text-align: center;
-  font-weight: 400;
-  letter-spacing: 1px;
-  font-size: 2rem; }
+header {
+  width: 100%;
+  height: 60px;
+  background: #25b99a;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  padding: 15px 0 15px 0;
+  box-shadow: 0 2px 4px rgba(44, 62, 80, 0.15); }
+  header input {
+    width: 100%;
+    height: 50px;
+    float: left;
+    font-size: 1rem;
+    font-weight: 400;
+    background: rgba(255, 255, 255, 0.2);
+    border: 0;
+    border-radius: 5px 25px 25px 5px;
+    outline: none;
+    box-shadow: none; }
+  header button {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 15px;
+    right: 0;
+    border-radius: 25px;
+    border: 0;
+    background: #fff;
+    outline: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none; }
+  header svg {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -8px 0 0 -8px; }
+  header .fill {
+    fill: #25b99a; }
 
-.task-list {
-  background-color: #eee;
-  margin-top: 40px;
-  padding: 5px 25px 20px 25px;
-  width: 400px;
-  margin: auto; }
-  .task-list .task-title {
-    font-size: 2rem;
-    letter-spacing: 2px; }
-  .task-list .u-list {
+.container {
+  width: 100%;
+  float: left;
+  padding: 15px 0 15px 0; }
+  .container ul {
+    width: 100%;
+    float: left;
     margin: 0;
-    padding: 0;
-    margin-bottom: 40px;
-    list-style-type: none; }
-    .task-list .u-list li {
-      padding: 10px;
-      border-bottom: 1px solid grey;
-      font-size: 1.5rem; }
-  .task-list input {
-    padding: 10px 5px;
-    outline: none;
-    border: none;
-    border-bottom: 2px solid #438dbb; }
-  .task-list button {
-    padding: 8px 15px 8px;
-    margin-left: 10px;
-    border: none;
-    border-radius: 50%;
-    outline: none;
-    font-size: 1.5rem;
-    background-color: #1f435a;
-    cursor: pointer; }
-    .task-list button:active {
-      background-color: #1f435a;
-      transform: translateY(1px); }
+    padding: 0; }
+    .container ul li {
+      width: 100%;
+      min-height: 50px;
+      font-size: 1.5rem;
+      position: relative;
+      box-shadow: 0 2px 4px rgba(44, 62, 80, 0.1);
+      float: left;
+      padding: 14px 0 14px 0;
+      margin: 0 0 14px 0;
+      background: #fff;
+      border-radius: 13px;
+      list-style: none; }
+    .container ul .buttons {
+      display: grid;
+      grid-template-columns: 70px 70px 70px 70px;
+      grid-template-rows: 50px;
+      grid-gap: 20px 20px;
+      position: absolute;
+      top: 15px;
+      right: 15px; }
+      .container ul .buttons button {
+        background: lightblue;
+        position: relative;
+        background: none;
+        border: 0px;
+        box-shadow: none;
+        outline: none;
+        cursor: pointer; }
+        .container ul .buttons button:after {
+          content: '';
+          width: 1px;
+          height: 30px;
+          background: grey;
+          position: absolute;
+          top: 10px;
+          left: 0; }
+      .container ul .buttons svg {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 35%;
+        left: 40%;
+        margin: -11px 0 0 -11px; }
+        .container ul .buttons svg .fill {
+          transition: fill 0.2s ease; }
+      .container ul .buttons .remove svg .fill {
+        fill: #3e917f; }
+      .container ul .buttons .remove:hover svg .fill {
+        fill: #ec4444; }
+      .container ul .buttons .complete svg .fill {
+        fill: #25b99a; }
+      .container ul .buttons .complete svg {
+        border-radius: 22px;
+        border: 1.5px solid #25b99a;
+        transition: background 0.2s ease; }
