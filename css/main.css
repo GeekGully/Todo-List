@@ -1,6 +1,11 @@
 body {
   background: #edf0f1;
-  padding: 80px 0 0 0; }
+  padding: 80px 0 0 0;
+  background: url(../img/back.jpg) no-repeat;
+  background-size: cover;
+  font-family: "Belleza", sans-serif;
+  letter-spacing: 1px;
+  font-weight: 400px; }
 
 .noFill {
   fill: none; }
@@ -15,45 +20,53 @@ header {
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
   padding: 15px 0 15px 0;
-  box-shadow: 0 2px 4px rgba(44, 62, 80, 0.15); }
-  header input {
-    width: 100%;
-    height: 50px;
-    float: left;
-    font-size: 1rem;
-    font-weight: 400;
-    background: rgba(255, 255, 255, 0.2);
-    border: 0;
-    border-radius: 5px 25px 25px 5px;
-    outline: none;
-    box-shadow: none; }
-  header button {
-    height: 50px;
-    width: 50px;
-    position: absolute;
-    top: 15px;
-    right: 0;
-    border-radius: 25px;
-    border: 0;
-    background: #fff;
-    outline: none;
-    cursor: pointer;
-    -webkit-appearance: none;
-    -moz-appearance: none; }
-  header svg {
-    width: 16px;
-    height: 16px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -8px 0 0 -8px; }
-  header .fill {
-    fill: #25b99a; }
+  box-shadow: 0 2px 4px rgba(44, 62, 80, 0.15);
+  margin-top: 0; }
+  header .contain {
+    margin: auto;
+    width: 700px;
+    position: relative; }
+    header .contain input {
+      width: 100%;
+      min-width: 700px;
+      box-sizing: border-box;
+      height: 50px;
+      font-size: 1rem;
+      font-weight: 400;
+      background: rgba(255, 255, 255, 0.2);
+      border: 0;
+      border-radius: 25px 25px 25px 25px;
+      outline: none;
+      box-shadow: none;
+      padding-left: 5px;
+      text-align: left; }
+    header .contain button {
+      height: 50px;
+      width: 50px;
+      position: absolute;
+      top: 0;
+      right: -5px;
+      border-radius: 25px;
+      border: 0;
+      background: #fff;
+      outline: none;
+      cursor: pointer;
+      -webkit-appearance: none;
+      -moz-appearance: none; }
+    header .contain svg {
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: -8px 0 0 -8px; }
+    header .contain .fill {
+      fill: #25b99a; }
 
 .container {
-  width: 100%;
-  float: left;
-  padding: 15px 0 15px 0; }
+  padding: 15px 0 15px 0;
+  margin: auto;
+  width: 900px; }
   .container ul {
     width: 100%;
     float: left;
@@ -71,19 +84,29 @@ header {
       background: #fff;
       border-radius: 13px;
       list-style: none; }
+    .container ul li .checked {
+      color: #25b99a;
+      text-decoration: line-through; }
+    .container ul li .datetime {
+      color: #25b99a; }
     .container ul .buttons {
       display: grid;
-      grid-template-columns: 70px 70px 70px 70px;
+      grid-template-columns: 50px 50px 50px 50px;
       grid-template-rows: 50px;
-      grid-gap: 20px 20px;
+      grid-column-gap: 20px;
       position: absolute;
       top: 15px;
-      right: 15px; }
+      right: 15px;
+      /* i{
+        position: absolute;
+        top: 10%;
+        left: 20%;
+      }*/ }
       .container ul .buttons button {
         background: lightblue;
         position: relative;
         background: none;
-        border: 0px;
+        border: 10px;
         box-shadow: none;
         outline: none;
         cursor: pointer; }
@@ -96,8 +119,8 @@ header {
           top: 10px;
           left: 0; }
       .container ul .buttons svg {
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
         position: absolute;
         top: 35%;
         left: 40%;
@@ -114,3 +137,9 @@ header {
         border-radius: 22px;
         border: 1.5px solid #25b99a;
         transition: background 0.2s ease; }
+      .container ul .buttons .up span {
+        color: #25b99a;
+        font-size: 50px; }
+      .container ul .buttons .down span {
+        color: #25b99a;
+        font-size: 50px; }
