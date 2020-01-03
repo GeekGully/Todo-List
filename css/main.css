@@ -1,22 +1,249 @@
-:root {
-  --clr--primary: rgb(67, 141, 187);
-  --clr-light: #f4f4f4; }
-
 body {
+  background: #edf0f1;
+  padding: 80px 0 0 0;
+  background: url(../img/back.jpg) no-repeat;
+  background-size: cover;
+  font-family: "Belleza", sans-serif;
+  letter-spacing: 1px;
+  font-weight: 400px;
+}
+
+.noFill {
+  fill: none;
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  background: #25b99a;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  padding: 15px 0 15px 0;
+  box-shadow: 0 2px 4px rgba(44, 62, 80, 0.15);
+  margin-top: 0;
+}
+
+header .contain {
+  margin: auto;
+  width: 700px;
+  position: relative;
+}
+
+header .contain input {
+  width: 100%;
+  min-width: 700px;
+  box-sizing: border-box;
+  height: 50px;
+  font-size: 1rem;
+  font-weight: 400;
+  background: rgba(255, 255, 255, 0.2);
+  border: 0;
+  border-radius: 25px 25px 25px 25px;
+  outline: none;
+  box-shadow: none;
+  padding-left: 5px;
+  text-align: left;
+}
+
+header .contain button {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 0;
+  right: -5px;
+  border-radius: 25px;
+  border: 0;
+  background: #fff;
+  outline: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+header .contain svg {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -8px 0 0 -8px;
+}
+
+header .contain .fill {
+  fill: #25b99a;
+}
+
+.container {
+  padding: 15px 0 15px 0;
+  margin: auto;
+  width: 900px;
+}
+
+.container ul {
+  width: 100%;
+  float: left;
   margin: 0;
-  font-family: sans-serif;
-  background-color: var(--clr--primary);
-  color: var(--clr-light); }
+  padding: 0;
+}
 
-h1 {
-  text-align: center; }
+.container ul li {
+  width: 100%;
+  min-height: 50px;
+  font-size: 1.5rem;
+  position: relative;
+  box-shadow: 0 2px 4px rgba(44, 62, 80, 0.1);
+  float: left;
+  padding: 14px 0 14px 0;
+  margin: 0 0 14px 0;
+  background: #fff;
+  border-radius: 13px;
+  list-style: none;
+}
 
-.task_list {
+.checked {  
+  color: #25b99a;
+  text-decoration: line-through;
+}
+
+.container ul li .datetime {
+  color: #25b99a;
+}
+
+.container ul .buttons {
   display: grid;
-  grid-template-columns: 2fr;
-  text-align: center; }
+  grid-template-columns: 50px 50px 50px 50px;
+  grid-template-rows: 50px;
+  grid-column-gap: 20px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  /* i{
+        position: absolute;
+        top: 10%;
+        left: 20%;
+      }*/
+}
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 10px; }
+.container ul .buttons button {
+  background: lightblue;
+  position: relative;
+  background: none;
+  border: 10px;
+  box-shadow: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/* .container ul .buttons button:after {
+  content: '';
+  width: 1px;
+  height: 30px;
+  background: grey;
+  position: absolute;
+  top: 10px;
+  left: 0;
+} */
+
+.container ul .buttons svg {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 35%;
+  left: 40%;
+  margin: -11px 0 0 -11px;
+}
+
+.container ul .buttons svg .fill {
+  transition: fill 0.2s ease;
+}
+
+.container ul .buttons .remove svg .fill {
+  fill: #3e917f;
+}
+
+.container ul .buttons .remove:hover svg .fill {
+  fill: #ec4444;
+}
+
+.container ul .buttons .complete svg .fill {
+  fill: #25b99a;
+}
+
+.container ul .buttons .complete svg {
+  border-radius: 22px;
+  border: 1.5px solid #25b99a;
+  transition: background 0.2s ease;
+}
+
+.container ul .buttons .up span {
+  color: #25b99a;
+  font-size: 50px;
+}
+
+.container ul .buttons .down span {
+  color: #25b99a;
+  font-size: 50px;
+}
+
+
+@media only screen and (max-width: 700px) {
+  header .contain {
+    margin: inherit;
+    width: auto;
+    position: relative;
+  }
+
+  .container {
+    padding: 15px 0 15px 0;
+    margin: auto;
+    width: auto;
+  }
+
+  .container ul {
+    width: 100%;
+    float: left;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container ul li {
+    width: 100%;
+    min-height: 50px;
+    font-size: 1.5rem;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(44, 62, 80, 0.1);
+    float: left;
+    padding: 14px 0 14px 0;
+    margin: 0 0 14px 0;
+    background: #fff;
+    border-radius: 13px;
+    list-style: none;
+  }
+/* 
+  .container ul .buttons button:after {
+    content: '';
+    width: 1px;
+    height: 30px;
+    background: grey;
+    position: absolute;
+    margin-top: 17px;
+    left: 0;
+  } */
+
+  .container ul .buttons .remove {
+    margin-top: 35px;
+  }
+  .container ul .buttons .complete {
+    margin-top: 35px;
+  }
+  .container ul .buttons .down {
+    margin-top: 10px;
+  }
+  .container ul .buttons .up {
+    margin-top: 9px;
+  }
+  
+}
